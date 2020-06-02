@@ -1,0 +1,61 @@
+In this challenge, a farmer is asking you to tell him how many legs can be counted among all his animals. The farmer breeds three species:
+
+chickens = 2 legs
+cows = 4 legs
+pigs = 4 legs
+The farmer has counted his animals and he gives you a subtotal for each species. You have to implement a function that returns the total number of legs of all the animals.
+
+Example:
+
+animals(2, 3, 5) ➞ 36
+
+animals(1, 2, 3) ➞ 22
+
+animals(5, 2, 8) ➞ 50
+Notes Don't forget to return the result. The order of animals passed is
+
+animals(chickens, cows, pigs).
+Remember that the farmer wants to know the total number of legs and not the total number of animals.
+
+Input Format
+
+Enter number of animals in order chickens, cows, pigs
+
+Constraints
+
+n>=0
+
+Output Format
+
+Print the total number of legs
+
+Sample Input 0
+
+2, 3, 5
+
+1, 2, 3
+
+5, 2, 8
+Sample Output 0
+
+36
+
+22
+
+50
+
+solution:
+def legs(chicken,cow,pig):
+   a=int(chicken)*2
+   b=int(cow)*4
+   c=int(pig)*4
+   d=int(a)+int(b)+int(c)
+   return d;
+
+animals = []
+for i in range(0,3):
+  animals = input()
+  print(legs(animals[0],animals[3],animals[6]))
+  if (i != 2):
+      print(end='\n')
+      animals = input()
