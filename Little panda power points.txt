@@ -1,0 +1,37 @@
+Little Panda has a thing for powers and modulus and he likes challenges. His friend** Lucy**, however, is impractical and challenges Panda to find both positive and negative powers of a number modulo a particular number. We all know thatimagerefers to the modular inverse ofimage(see Wikipedia).
+
+Since Lucy is impractical, she says thatimageforimage.
+
+Now she wants Panda to computeimage.
+
+She also thinks that this problem can be very difficult if the constraints aren't given properly.** Little Panda** is very confused and leaves the problem to the worthy programmers of the world. Help him in finding the solution.
+
+Input Format
+
+The first line contains T, the number of test cases. Then T lines follow, each line containing A, B and X .
+
+Constraints
+
+image
+
+Output Format
+
+Output the value ofimage.
+
+Sample Input 0
+
+3  
+1 2 3  
+3 4 2  
+4 -1 5
+Sample Output 0
+
+1  
+1  
+4 
+
+solution:(IN PYTHON2)
+n=int(input())
+for i in range(n):
+    x,y,z= map(int, raw_input().split())
+    print((x**abs(y))%(z))
